@@ -80,8 +80,7 @@
             fetch("http://spartacodingclub.shop/sparta_api/weather/seoul").then(res => res.json()).then(data => {
                 let number = data['temp']
                 $('#temp').text(number)
-            }
-            )
+            })
         })
     </script>
 </head>
@@ -89,7 +88,7 @@
 <body>
     <div class="mytitle">
         <h1> HUN'S PICK! </h1>
-        <div>현재 마음의 온도.. <span id="temp">20</span>도</div>
+        <div>마음의 온도 <span id="temp"></span>℃</div>
         <button onclick="hey()"> LIKE MOVIE </button>
     </div>
     <div class="mypost">
